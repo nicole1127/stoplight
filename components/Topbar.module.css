@@ -1,0 +1,87 @@
+.navbar{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color:#fefefe;
+	color:black;
+	min-height:10vh;
+	border-bottom:1px solid black;
+	height: 50px;
+  }
+  .avatar{
+	  margin-right: 50px;
+	  margin-top: 5px;
+	  width: 50px;
+	  height: 50px
+	}
+  .brand_title{
+	font-size:1.5rem;
+	margin-left: 300px;
+  }
+  .navbar_links{
+	margin:0 15px;
+  }
+  .navbar_links ul {
+	display:flex;
+  }
+  .navbar-links li a {
+	color:black;
+	padding:1rem;
+	display:block;
+  }
+  .navbar-links li a:hover{
+	background-color:#555;
+	color:white;
+  }
+  
+  .toggle-button {
+	position:absolute;
+	top:0.55rem;
+	right:1rem;
+	display:none;
+	flex-direction:column;
+	justify-content:space-between;
+	width:20px;
+	height:16px;
+  }
+  .toggle-button i {
+	color:black;
+	font-size:25px;
+  }
+  
+  @media (max-width:850px){
+	 .navbar
+	{
+	  flex-direction:column;
+	  align-items:flex-start;
+	  min-height:10vh;
+	}
+	.toggle-button 
+	{
+	  display:flex;
+	}
+	.navbar-links
+	{
+	  display:none;
+	  width:100%;
+	}
+	.navbar-links ul 
+	{
+	  width:100%;
+	  flex-direction:column;
+	}
+	.navbar-links li 
+	{
+	  text-align:center;
+	}
+	.navbar-links li a 
+	{
+	  padding: 0.5rem 1rem;
+	}
+	.navbar-links.active
+	{
+	  display:flex;
+	}
+   
+	
+  }

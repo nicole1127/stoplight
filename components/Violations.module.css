@@ -1,0 +1,170 @@
+.main_content{
+  margin-left: 300px;
+}
+
+.header{
+  margin-top: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-indent: 12px;
+  color: #042F39;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+.table { 
+  width: 750px; 
+  border-collapse: collapse; 
+  margin:50px auto;
+  margin-left: 65px;
+  margin-top: 120px;
+  background-color: #F9F9f9;
+  border-bottom: 1px solid #2F2F2F;;
+  align-content: center;
+  }
+
+.tr,.th, .td{
+border-left: 1px solid #2F2F2F;
+border-right: 1px solid #2F2F2F;
+}
+
+.tr > th { 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+    border: 1px solid #2F2F2F; 
+
+}
+.th{
+  border: none;
+}
+.td, .th { 
+  padding: 10px; 
+  text-align: center; 
+  font-size: 18px;
+  }
+
+.eye{
+width: 25px;
+height: 25px;
+align-content: center;
+background-color: white;
+border: 1px solid white;
+}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  .table { 
+      width: 100%; 
+  }
+
+  /* Force table to not be like tables anymore */
+  .table, .thead, .tbody, .th, .td, .tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .thead .tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .tr { border: 1px solid #ccc; }
+  
+  .td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+  }
+
+  .td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+    /* Label the data */
+    content: attr(data-column);
+
+    color: #000;
+    font-weight: bold;
+  }
+
+}
+.taas{
+  position: absolute;
+  width: 58px;
+  height: 24px;
+  left: 360px;
+  top: 150px;
+}
+.show {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-indent: 5px;
+  color: #515151;
+}
+.input{
+  box-sizing: border-box;
+  position: absolute;
+  width: 67px;
+  height: 30px;
+  left: 60px;
+  top: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.entries {
+  margin-top: -45px;
+  margin-left: 140px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-indent: 5px;
+  color: #515151;
+}
+.search{
+position: absolute;
+width: 249px;
+height: 25px;
+left: 509px;
+margin-top: -45px;
+}
+.label{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-indent: 5px;
+color: #515151;
+}
