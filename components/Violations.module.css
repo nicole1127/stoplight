@@ -1,3 +1,101 @@
+.content {
+  display: flex;
+  margin: calc(-100vh - (-50px)) 0 0 200px;
+  min-height: calc(100vh - 50px);
+  min-width: calc(100vw - 200px);
+  padding-top: 50px;
+  background-color: #f6f6f6;
+}
+
+.content_label > h3 {
+  margin: -40px 0 0 10px;
+  color: #042F39;
+}
+
+.divtable {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 80px 0 0;
+  padding: 20px;
+  width: 100vw;
+  height: calc(100vh - 200px);
+  background-color: #ffffff;
+}
+
+.divcontent1, .divcontent2 {
+  min-width: 50%;
+}
+
+.inner1 > label{
+  font-size: 16px;
+  margin: -5px 0 5px 5px;
+  color: #515151;
+}
+
+.inner1 > select {
+  min-width: 50px;
+  height: 23px;
+}
+
+.inner2 {
+  float: right;
+}
+
+.inner2 > label{
+  font-size: 16px;
+  margin: 0 0 5px 5px;
+  color: #515151;
+}
+.inner2 > input {
+  min-width: 150px;
+  height: 23px;
+}
+
+.divcontent3 {
+  display: flex;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.table {
+  margin-left: -600px;
+  border: #042F39 2px solid;
+  background-color: #F9F9f9;
+}
+
+.tr,.th, .td{
+  border-left: 1px solid #2F2F2F;
+  border-right: 1px solid #2F2F2F;
+  }
+
+.tr > th { 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid #2F2F2F
+}
+
+.th{
+  border: none;
+}
+.td, .th { 
+  padding: 10px; 
+  text-align: center; 
+  font-size: 18px;
+}
+
+.td > button {
+  border-style: none;
+  background-color: none;
+}
+.eye{
+  width: 25px;
+  height: 25px;
+}
+
+/*
 .main_content{
   margin-left: 300px;
 }
@@ -73,24 +171,25 @@ only screen and (max-width: 760px),
   .table { 
       width: 100%; 
   }
-
+*/
   /* Force table to not be like tables anymore */
-  .table, .thead, .tbody, .th, .td, .tr { 
+/*  .table, .thead, .tbody, .th, .td, .tr { 
     display: block; 
   }
-  
+*/  
   /* Hide table headers (but not display: none;, for accessibility) */
-  .thead .tr { 
+/*  .thead .tr { 
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  
+*/
+/*  
   .tr { border: 1px solid #ccc; }
   
   .td { 
     /* Behave  like a "row" */
-    border: none;
+/*    border: none;
     border-bottom: 1px solid #eee; 
     position: relative;
     padding-left: 50%; 
@@ -98,15 +197,15 @@ only screen and (max-width: 760px),
 
   .td:before { 
     /* Now like a table header */
-    position: absolute;
+/*    position: absolute;
     /* Top/left values mimic padding */
-    top: 6px;
+/*    top: 6px;
     left: 6px;
     width: 45%; 
     padding-right: 10px; 
     white-space: nowrap;
     /* Label the data */
-    content: attr(data-column);
+/*    content: attr(data-column);
 
     color: #000;
     font-weight: bold;
@@ -168,3 +267,5 @@ line-height: 24px;
 text-indent: 5px;
 color: #515151;
 }
+
+*/

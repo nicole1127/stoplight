@@ -1,3 +1,77 @@
+.sidebar {
+	max-width: 200px;
+	margin: -50px 0 0 0;
+	padding: 0 0 15px 0;
+	min-height: 100vh;
+	background-color: #042F39;
+}
+
+.sidebar_logo {
+	display: flex;
+	align-items: center;
+    border-bottom: #032730 solid 2px;
+}
+
+.sidebar_logo > img {
+	width: 35px;
+	height: 35px;
+	margin: 7px 7px 7px 15px;
+}
+
+.sidebar_logo > h3 {
+	font-size: 18px;
+	margin: 0;
+	color: white;
+}
+
+.btn_violations, .btn_aboutus {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+}
+
+.btn_violations > button,
+.btn_aboutus > button,
+.btn_logout > button {
+	background-color: #042F39;
+	border: none;
+	color: white;
+	font-size: 16px;
+}
+
+.btn_violations > img {
+	width: 20px;
+	height: 20px;
+}
+.btn_violations > button {
+	margin: 30px 0 30px 10px;
+}
+
+.btn_aboutus > img {
+	width: 20px;
+	height: 20px;
+}
+.btn_aboutus > button {
+	margin: 30px 0 30px 10px;
+}
+
+.btn_logout {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+	margin-top: -10px;
+}
+
+.btn_logout > img {
+	width: 20px;
+	height: 20px;
+}
+.btn_logout > button {
+	margin: 0 0 0 10px;
+}
+
+
+/*
 .wrapper{
 	background-color: #F5F5F5;;
 }
@@ -123,3 +197,4 @@ border-bottom: 4px solid #032730;
 	display: block;
 }
 
+*/

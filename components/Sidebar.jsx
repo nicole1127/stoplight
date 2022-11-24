@@ -2,7 +2,35 @@ import styles from "./Sidebar.module.css";
 
 const Violations = () => {
     return (
-    <div className={styles.wrapper}> 
+        <div className={styles.sidebar}>
+            <div className={styles.sidebar_logo}>
+                <img src="/images/sidebar-trafficlight.png"></img>
+                <h3> ADMIN </h3>
+            </div>
+
+            <div className={styles.btn_violations}>
+                <img src="/images/sidebar-violations.png"></img>
+                <button> Violations </button>
+            </div>
+            <div className={styles.btn_aboutus}>
+                <img src="/images/sidebar-about.png"></img>
+                <button> About Us </button>
+            </div>
+            <div className={styles.btn_logout}>
+                <img src="/images/sidebar-logout.png"></img>
+                <button> Logout </button>
+            </div>
+        </div>
+    )
+}
+    
+    
+export default Violations;
+
+
+
+{/*
+<div className={styles.wrapper}> 
         <div  className={styles.sidebar}>
             <div className={styles.profile} >
                 <img src="/images/sidebar-trafficlight.png" alt="profile_picture"></img>
@@ -41,5 +69,4 @@ const Violations = () => {
         
     );
   };
-    
-  export default Violations;
+*/}
