@@ -1,16 +1,14 @@
-import Topbar from "../components/Topbar";
+import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Violations from "../components/Violations";
-import Bottom from "../components/Bottom";
 
 
 const violations = () => {
     return (
       <div>
-        <Topbar/>
+        <Header/>
         <Sidebar/> 
         <Violations/>
-        <Bottom/>
       </div>
     );
   };

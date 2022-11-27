@@ -2,25 +2,28 @@
 	display: flex;
 	justify-content:space-between;
 	align-items: center;
-	margin: 0 0 0 200px;
-	padding: 10px 0;
-	max-height: 50px;
-	background-color: #ffffff;
+	width: calc(100vw - 250px);
+	height: 50px;
+	margin-left: 250px;
+	padding: 10px 10px;
+	border-bottom: 1px solid #F6F6F6;
+	background-color: #FFFFFF;
 }
 
 .menuIcon > img {
 	width: 25px;
 	height: 25px;
-	margin: 0 10px;
+	cursor: pointer;
 }
 
 .avatar > img {
 	width: 30px;
 	height: 30px;
-	margin: 0 10px;
 }
 
-/*
+
+
+/*--------------
 .navbar{
 	display:flex;
 	justify-content:space-between;

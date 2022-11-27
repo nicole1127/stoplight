@@ -1,6 +1,6 @@
 import Login from "../components/Login";
 
-const stoplight = () => {
+const login = () => {
     return (
       <div>
         <Login />
@@ -8,5 +8,5 @@ const stoplight = () => {
     );
   };
   
-  export default stoplight;
+  export default login;
   

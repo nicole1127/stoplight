@@ -29,3 +29,26 @@
   text-indent: 10px;
   color: #042F39;
 }
+
+
+.card {
+  width: 839px;
+  height: 292px;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  background: #F9F9F9;
+  border-radius: 20px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card > p {
+  font-size: 18px;
+}
