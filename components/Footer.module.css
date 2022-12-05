@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    color: white;
+    text-align: center;
+}

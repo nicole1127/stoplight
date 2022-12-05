@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.content {
+    margin-left: 230px;
+    padding: 1px 10px;
+    height: calc(100vh - 60px);
+    display: flex;
+}
+.content > h3, .imgdiv > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: #042F39;
+}
+.card {
+    transition: 0.3s;
+    margin: 60px 0 0 -110px;
+    width: 500px;
+    height: 370px;
+    border-radius: 3px;
+    padding: 10px;
+    background: #fcfcfc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card:hover {
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2);
+}
+.label {
+    display: flex;
+}
+.label > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-indent: 15px;
+    color: #000000;
+}
+.label > h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 15px;
+    color: #000000;
+    border-bottom: 1px solid  #c1c1c1;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.confirmbtn {
+    width: 250px;
+    height: 33px;
+    margin: 10px 10px 7px 0;
+    padding-top: 3px;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    background-color: #F08400;
+    border-style: none;
+}
+.confirmbtn:hover {
+    background-color: #ff8c00;
+    cursor: pointer;
+}
+.invalidatebtn {
+    width: 250px;
+    height: 33px;
+    margin-left: 10px;
+    padding-top: 3px;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    background-color: #660808cc;
+    color: #FFFFFF;
+    border-style: none;
+}
+.invalidatebtn:hover {
+    background-color: #800909cc;
+    cursor: pointer;
+}
+.imgdiv {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    transition: 0.3s;
+}
+.image1, .image2, .image3 {
+    width: 700px;
+    height: 350px;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        margin-left: 150px;
+        padding: 5px 5px 0px 5px ;
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s;
+    }
+    .card {
+        margin: 0px 0 90px 20px;
+        width: 430px;
+        height: 320px;
+        transition: 0.3s;
+    }
+    .label > h3 {
+        font-size: 16px;
+        text-indent: 10px;
+    }
+    .label > h4 {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .button {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .confirmbtn {
+        width: 200px;
+        height: 30px;
+        margin: 5px 5px 5px 0;
+        font-size: 16px;
+    }
+    .invalidatebtn {
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .imgdiv {
+        margin-left: 20px;
+        transition: 0.3s;
+    }
+    .imgdiv> h3 {
+        margin-left: -20px;
+    }
+    .image1, .image2, .image3 {
+        width: 400px;
+        height: 250px;
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        margin-bottom: 5px;
+    }
+}

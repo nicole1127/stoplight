@@ -1,18 +1,16 @@
-import styles from "./Header.module.css";
+import React from 'react'
+import styles from './Header.module.css'
+import { CgProfile } from 'react-icons/cg'
 
 const Header = () => {
   return (
-    <div className={styles.container}>
-      <header className={styles.header}>
-        <div className={styles.menuIcon}>
-          <img src="/images/header-menu.png"></img>
-        </div>
-        <div className={styles.avatar}>
-          <img src="/images/header-avatar.png"></img>
-        </div>
-      </header>
-    </div>    
-  );
-};
+    <div className={styles.parent}>
+      <div className={styles.container}>
+        <h2>Red Light Enforcement System</h2>
+        <CgProfile className={styles.profile_icon} />
+      </div>
+    </div>
+  )
+}
 
-export default Header;
+export default Header

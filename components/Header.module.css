@@ -1,115 +1,61 @@
-.header {
-	display: flex;
-	justify-content:space-between;
-	align-items: center;
-	width: calc(100vw - 250px);
-	height: 50px;
-	margin-left: 250px;
-	padding: 10px 10px;
-	border-bottom: 1px solid #F6F6F6;
-	background-color: #FFFFFF;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@500&display=swap');
+
+.parent {
+    height: 60px;
+    top: 0;
+    margin-left: 230px;
+    background-color: #fafafa;
+    box-shadow: 1px 2px 1em rgb(131, 131, 131);
+    position: -webkit-sticky;
+    position: sticky;
 }
-
-.menuIcon > img {
-	width: 25px;
-	height: 25px;
-	cursor: pointer;
+.container {
+    height: 60px;
+    margin: 0 0 0 34%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.avatar > img {
-	width: 30px;
-	height: 30px;
+.profile_icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
 }
-
-
-
-/*--------------
-.navbar{
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	background-color:#fefefe;
-	color:black;
-	min-height:10vh;
-	border-bottom:1px solid black;
-	height: 50px;
-  }
-  .avatar{
-	  margin-right: 50px;
-	  margin-top: 5px;
-	  width: 50px;
-	  height: 50px
-	}
-  .brand_title{
-	font-size:1.5rem;
-	margin-left: 300px;
-  }
-  .navbar_links{
-	margin:0 15px;
-  }
-  .navbar_links ul {
-	display:flex;
-  }
-  .navbar-links li a {
-	color:black;
-	padding:1rem;
-	display:block;
-  }
-  .navbar-links li a:hover{
-	background-color:#555;
-	color:white;
-  }
-  
-  .toggle-button {
-	position:absolute;
-	top:0.55rem;
-	right:1rem;
-	display:none;
-	flex-direction:column;
-	justify-content:space-between;
-	width:20px;
-	height:16px;
-  }
-  .toggle-button i {
-	color:black;
-	font-size:25px;
-  }
-  
-  @media (max-width:850px){
-	 .navbar
-	{
-	  flex-direction:column;
-	  align-items:flex-start;
-	  min-height:10vh;
-	}
-	.toggle-button 
-	{
-	  display:flex;
-	}
-	.navbar-links
-	{
-	  display:none;
-	  width:100%;
-	}
-	.navbar-links ul 
-	{
-	  width:100%;
-	  flex-direction:column;
-	}
-	.navbar-links li 
-	{
-	  text-align:center;
-	}
-	.navbar-links li a 
-	{
-	  padding: 0.5rem 1rem;
-	}
-	.navbar-links.active
-	{
-	  display:flex;
-	}
-   
-	
-  }
-
-  */
+/* Traffic Light Violation System */
+.container > h2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 26px;
+    color: rgb(49, 49, 49);
+    text-shadow: 2px 2px #f08400aa;
+}
+@media screen and (max-width: 700px) {
+    .parent {
+        height: 60px;
+        margin-left: 140px;
+        position: relative;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+    }
+    .menu_icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .profile_icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+    }
+    .container > h2 {
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 18px;
+        color: rgb(49, 49, 49);
+        text-shadow: 1px 1px #f08400aa;
+    }
+}

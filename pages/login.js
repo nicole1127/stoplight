@@ -1,12 +1,15 @@
-import Login from "../components/Login";
+import React from 'react'
+import Login from "../components/Login"
+import { ChakraProvider } from '@chakra-ui/react'
 
 const login = () => {
     return (
+      <ChakraProvider>
       <div>
-        <Login />
+        <Login/>
       </div>
+      </ChakraProvider>
     );
   };
   
-  export default login;
-  
+export default login

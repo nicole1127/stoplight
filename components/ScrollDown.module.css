@@ -1,0 +1,13 @@
+.top_to_btm {
+    position: absolute;
+    margin: -40px 0 0 0;
+}
+.angledown {
+    width: 60px;
+    height: 40px;
+    color: transparent;
+}
+.angledown:hover {
+    box-shadow: 0px 2px 0px 0px #eea05bf6;
+    cursor: pointer;
+}
