@@ -39,9 +39,9 @@ const Login = () => {
                                 <FormControl isInvalid={errors.name}>
                                     <Input
                                     className={styles.inputs}
-                                    id='name'
+                                    
                                     placeholder='Enter username'
-                                    {...register('username ', {
+                                    {...register('name', {
                                         required: 'This is required',
                                         minLength: { value: 8, message: 'Minimum length should be 8' },
                                     })}
@@ -53,7 +53,7 @@ const Login = () => {
                                         id='password'
                                         type={show ? 'text' : 'password'}
                                         placeholder='Enter password'
-                                        {...register('password ', {
+                                        {...register('password', {
                                             required: 'This is required',
                                             minLength: { value: 5, message: 'Minimum length should be 5' },
                                         })}
