@@ -17,10 +17,10 @@ const Home = () => {
                 </div>
                 <div className={styles.button}>
                 <button className={styles.secondary}>
-                    <Link href="/home" className={styles.home}>Home</Link>
+                    <Link href="/" className={styles.home}>Home</Link>
                 </button>
                 <button className={styles.secondary}>
-                    <Link href="/home" className={styles.about}>About</Link>
+                    <Link href="/" className={styles.about}>About</Link>
                     <ScrollDown/>
                 </button>
                 <button className={styles.primary}>

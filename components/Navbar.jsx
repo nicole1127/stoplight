@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
         <div className={styles.logoutdiv}>
           <RiLogoutCircleRLine className={styles.logout_icon}/>
-          <Link href="/login" className={styles.logout}>Logout</Link>
+          <Link href="/" className={styles.logout}>Logout</Link>
         </div>
         <br/><br/>
       </div>

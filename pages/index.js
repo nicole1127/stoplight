@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from '../components/Home'
 
-const home = () => {
+const index = () => {
   return (
     <div>
       <Home/>
@@ -9,4 +9,4 @@ const home = () => {
   )
 }
 
-export default home
+export default index

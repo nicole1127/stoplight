@@ -72,7 +72,7 @@ const Login = () => {
                                 <Button mt={6} colorScheme='Orange' fontSize='xl' href='/home' isLoading={isSubmitting} type='submit' className={styles.primary}>
                                     LOGIN
                                 </Button>
-                                <Link href="/home">
+                                <Link href="/">
                                     <button className={styles.secondary}>Back to Home</button>
                                 </Link>
                                 </form>
