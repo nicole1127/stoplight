@@ -25,7 +25,7 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000/home](http://localhost:3000/home) with your browser to see the homepage.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the homepage.
 
 
 
