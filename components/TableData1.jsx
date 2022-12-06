@@ -9,11 +9,11 @@ import Link from 'next/link'
 const TableData1 = () => {
   const router =  useRouter()
   const {
-      query:{ id, platenum, date, time, loc, type, status},
+      query:{ id, platenumber, date, time, loc, type, status},
     } = router
   const props = {
       id,
-      platenum,
+      platenumber,
       date,
       time,
       loc,
@@ -30,7 +30,7 @@ const TableData1 = () => {
         <div className={styles.card}>
           <div className={styles.label}>
             <h3 className="platenum">Plate Number:</h3>
-            <h4>{props.platenum}</h4>
+            <h4>{props.platenumber}</h4>
           </div>
           <div className={styles.label}>
             <h3 className="date">Date:</h3>
@@ -55,9 +55,9 @@ const TableData1 = () => {
         </div>
         <div className={styles.imgdiv}>
           <h3>Captured Images</h3>
-          <img src="/" className={styles.image1}/>
-          <img src="/" className={styles.image2}/>
-          <img src="/" className={styles.image3}/>
+          <img src="/images/sample-violation1.jpg" className={styles.image1}/>
+          <img src="/images/sample-violation1a.jpg" className={styles.image2}/>
+          <img src="/images/sample-violation1b.jpg" className={styles.image3}/>
         </div>
       </div>
     </div>

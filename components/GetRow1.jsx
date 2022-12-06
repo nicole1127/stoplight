@@ -4,7 +4,7 @@ import Router from 'next/router'
 
 const GetRow1 = () => {
     const  id = "1";
-    const  platenum = "XXXXXXX";
+    const  platenumber = "XHJ 277";
     const  date = "November 28, 2022";
     const  time = "11:35 AM";
     const  loc = "Congressional Ave, Dasmariñas, Cavite";
@@ -16,7 +16,7 @@ const GetRow1 = () => {
             pathname: "/tabledata1",
             query:{
                 id,
-                platenum,
+                platenumber,
                 date,
                 time,
                 loc,

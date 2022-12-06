@@ -47,7 +47,7 @@ function Table() {
     const data = React.useMemo( () => [
        {
             id: '1',
-            platenum: 'XXXXXXXX',
+            platenum: 'XHJ 277',
             date: 'November 28, 2022',
             time: '11:35 AM',
             loc: 'Congressional Ave, Dasmariñas, Cavite',
@@ -57,7 +57,7 @@ function Table() {
        },
        {
             id: '2',
-            platenum: 'XXXXXXXX',
+            platenum: 'DEB 701',
             date: 'December 1, 2022',
             time: '3:46 PM',
             loc: 'R-2 Emilio Aguinaldo Hwy, Dasmariñas, Cavite',
