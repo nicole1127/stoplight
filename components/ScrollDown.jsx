@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './ScrollDown.module.css'
-import { useState, useEffect } from "react";
 import { FaAngleDown } from 'react-icons/fa'
+import { useState, useEffect } from "react"
 
 
 const ScrollDown = () => {
@@ -32,6 +32,5 @@ const ScrollDown = () => {
         </div>
     )
 }
-
 
 export default ScrollDown

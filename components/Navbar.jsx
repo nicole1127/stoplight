@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Navbar.module.css'
+import Image from 'next/image'
 import Link from 'next/link'
 import { HiHome } from 'react-icons/hi'
 import { RiLogoutCircleRLine } from 'react-icons/ri'
@@ -9,7 +10,7 @@ const Navbar = () => {
   return (
     <div className={styles.parent}>
       <div className={styles.logo}>
-        <img src="/images/sidebar-trafficlight.png" />
+        <Image src="/images/sidebar-trafficlight.png" className={styles.navbar_logo} width="45" height="45"/>
         <h2>ADMIN</h2>
       </div>
       <div className={styles.links}>

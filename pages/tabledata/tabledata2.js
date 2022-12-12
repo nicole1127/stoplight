@@ -1,5 +1,6 @@
 import React from 'react'
-import TableData2 from '../components/TableData2'
+import TableData2 from '../../components/TableData2'
+
 
 const tabledata2 = () => {
   return (

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+
 .parent {
     margin: -60px 0 0 0;
     padding: 0;
@@ -15,7 +16,7 @@
     display: flex;
     justify-items: center;
 }
-.logo > img {
+.navbar_logo {
     width: 45px;
     height: 45px;
 }
@@ -59,7 +60,7 @@
         overflow: hidden;
         position: fixed;
     }
-    .logo > img {
+    .navbar_logo {
         width: 35px;
         height: 35px;
     }

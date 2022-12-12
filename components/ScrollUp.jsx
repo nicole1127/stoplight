@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './ScrollUp.module.css'
-import { useState, useEffect } from "react";
 import { FaAngleUp } from 'react-icons/fa'
+import { useState, useEffect } from "react"
 
 
 const ScrollUp = () => {
@@ -31,6 +31,5 @@ const ScrollUp = () => {
         </div>
     )
 }
-
 
 export default ScrollUp

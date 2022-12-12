@@ -1,17 +1,24 @@
 import React from 'react'
 import styles from './Home.module.css'
+import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import ScrollUp from './ScrollUp'
 import ScrollDown from './ScrollDown'
 import Footer from './Footer'
 
+
 const Home = () => {
   return (
     <div className={styles.parent}>
+        <Head>
+            <title>Red Light Enforcement System</title>
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
         <div className={styles.child}>
             <div className={styles.header}>
                 <div className={styles.logo}>
-                    <img src="/images/sidebar-trafficlight.png" />
+                    <Image src="/images/sidebar-trafficlight.png" className={styles.homelogo} width='50' height='50'/>
                     <h3><span className={styles.pink}>Pink</span>
                     <span className={styles.code}>CodeX</span></h3>
                 </div>
@@ -23,9 +30,9 @@ const Home = () => {
                     <Link href="/" className={styles.about}>About</Link>
                     <ScrollDown/>
                 </button>
-                <button className={styles.primary}>
-                    <Link href="/login" className={styles.signin}>SIGN IN</Link>
-                </button>
+                <Link href="/login">
+                    <button className={styles.primary}>SIGN IN</button>
+                </Link> 
                 </div>
             </div>
             <div className={styles.container1}>
@@ -51,7 +58,7 @@ const Home = () => {
                     <p><b>The Red Light Enforcement System</b> is a web application system developed by
                     <span className={styles.pink}> Pink</span>
                     <span className={styles.code}>CodeX</span>.<br/>
-                    This is an automated system that helps traffic enforcement by automatically detecting red light violations and capturing<br/>vehicle images.
+                    This is an automated system that helps traffic enforcement by automatically detecting red light violations and<br/>capturing vehicle images.
                         <br/><br/><br/><br/><br/>
                     </p>
                 </div>

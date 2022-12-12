@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@500&display=swap');
 
+
 .parent {
     height: 60px;
     top: 0;
@@ -30,6 +31,7 @@
     color: rgb(49, 49, 49);
     text-shadow: 2px 2px #f08400aa;
 }
+
 @media screen and (max-width: 700px) {
     .parent {
         height: 60px;

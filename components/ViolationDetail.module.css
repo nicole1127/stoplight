@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+
 .content {
     margin-left: 230px;
     padding: 1px 10px;
@@ -97,11 +98,12 @@
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    margin-bottom: 10px;
     transition: 0.3s;
 }
 .image1, .image2, .image3 {
     width: 700px;
-    height: 350px;
+    height: 360px;
     border: 1px solid #d5d5d5;
     border-radius: 3px;
     margin-bottom: 10px;

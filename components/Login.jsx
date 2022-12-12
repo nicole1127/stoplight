@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './Login.module.css'
+import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
-import { FormErrorMessage, FormControl, Input,
-        Button, InputGroup, InputRightElement } from '@chakra-ui/react'
+import { FormErrorMessage, FormControl, Input, Button, InputGroup, InputRightElement } from '@chakra-ui/react'
 
 
 const Login = () => {
@@ -23,12 +24,15 @@ const Login = () => {
         })
       }
 
-
     return (
             <div className={styles.container}>
+                <Head>
+                    <title>Login</title>
+                    <link rel="icon" href="/favicon.ico" />
+                </Head>
                 <div className={styles.content}>
                     <div className={styles.imagediv}>
-                        <img src="/images/login_picture.png"/>
+                        <Image src="/images/login_picture.png" className={styles.photo} width='440' height='500'/>
                     </div>
                     <div className={styles.form}>
                         <div className={styles.mainform}>
@@ -47,22 +51,22 @@ const Login = () => {
                                     })}
                                     />
                                     <InputGroup>
-                                        <Input
-                                        mt={2}
-                                        className={styles.inputs}
-                                        id='password'
-                                        type={show ? 'text' : 'password'}
-                                        placeholder='Enter password'
-                                        {...register('password', {
-                                            required: 'This is required',
-                                            minLength: { value: 5, message: 'Minimum length should be 5' },
-                                        })}
+                                    <Input
+                                    className={styles.inputs}
+                                    mt={2}
+                                    id='password'
+                                    type={show ? 'text' : 'password'}
+                                    placeholder='Enter password'
+                                    {...register('password', {
+                                        required: 'This is required',
+                                        minLength: { value: 5, message: 'Minimum length should be 5' },
+                                    })}
                                     />
-                                        <InputRightElement>
-                                            <Button mt={4}  mr={1} h='1.80rem' size='sm' colorScheme='#042F39' color='white' onClick={handleClick}>
-                                            {show ? 'Hide' : 'Show'}
-                                            </Button>
-                                        </InputRightElement>
+                                    <InputRightElement>
+                                        <Button mt={4}  mr={1} h='1.80rem' size='sm' colorScheme='#042F39' color='white' onClick={handleClick}>
+                                        {show ? 'Hide' : 'Show'}
+                                        </Button>
+                                    </InputRightElement>
                                     </InputGroup>
 
                                     <FormErrorMessage>
@@ -83,6 +87,5 @@ const Login = () => {
             </div>
         )
     }
-
 
 export default Login

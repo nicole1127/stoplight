@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Table.module.css'
 import Router from 'next/router'
 
+
 const GetRow2 = () => {
     const  id = "1";
     const  platenumber = "DEB 701";
@@ -13,7 +14,7 @@ const GetRow2 = () => {
 
     function sendProps() {
         Router.push({
-            pathname: "/tabledata2",
+            pathname: "/tabledata/tabledata2",
             query:{
                 id,
                 platenumber,
