@@ -11,7 +11,7 @@ const Dashboard = () => {
     <div className={styles.parent}>
       <Head>
           <title>Dashboard</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/myicon.png" />
       </Head>
       <Header/>
       <Navbar/>

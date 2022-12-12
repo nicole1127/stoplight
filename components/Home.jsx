@@ -13,12 +13,12 @@ const Home = () => {
     <div className={styles.parent}>
         <Head>
             <title>Red Light Enforcement System</title>
-            <link rel="icon" href="/my-icon.png" />
+            <link rel="icon" href="/myicon.png" />
         </Head>
         <div className={styles.child}>
             <div className={styles.header}>
                 <div className={styles.logo}>
-                    <Image src="/images/sidebar-trafficlight.png" className={styles.homelogo} width='50' height='50'/>
+                    <Image src="/myicon.png" className={styles.homelogo} width='50' height='50'/>
                     <h3><span className={styles.pink}>Pink</span>
                     <span className={styles.code}>CodeX</span></h3>
                 </div>

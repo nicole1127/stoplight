@@ -27,7 +27,7 @@ const TableData1 = () => {
     <div className={styles.parent}>
         <Head>
             <title>Violation Detail</title>
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/myicon.png" />
         </Head>
         <Header/>
         <Navbar/>

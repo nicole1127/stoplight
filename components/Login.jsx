@@ -28,7 +28,7 @@ const Login = () => {
             <div className={styles.container}>
                 <Head>
                     <title>Login</title>
-                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="icon" href="/myicon.png" />
                 </Head>
                 <div className={styles.content}>
                     <div className={styles.imagediv}>
